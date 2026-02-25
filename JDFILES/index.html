@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: darkblue ;
+        }
+        .container {
+            width: 600px;
+            margin: 20px auto;
+            background: skyblue;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 5px;
+        }
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+        }
+        .buttons {
+            margin-top: 15px;
+            text-align: center;
+        }
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2> Clark College Enrollment Form</h2>
+
+    <form>
+
+        <label>First Name*</label>
+        <input type="text" required>
+
+        <label>Middle Name</label>
+        <input type="text">
+
+        <label>Last Name*</label>
+        <input type="text" required>
+
+        <label>Birthday*</label>
+        <input type="date" required>
+
+        <label>Birthplace*</label>
+        <input type="text" required>
+
+        <label>Age*</label>
+        <input type="number" required>
+
+        <label>Year Level*</label>
+        <select required>
+            <option value="">Select Year Level</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <label>Course*</label>
+        <select required>
+            <option value="">Select Course</option>
+            <option>ACT (Associate in Computer Technology)</option>
+            <option>BSOA (Business Office Administration)</option>
+            <option>ENTREP (Entrepreneurship)</option>
+            <option>HM (Hospitality Management)</option>
+            <option>CT (Computer Technology)</option>
+        </select>
+
+        <label>Citizenship*</label>
+        <input type="text" value="Filipino" required>
+
+        <label>Sex*</label>
+        <div class="radio-group">
+            <input type="radio" name="sex" required> Male
+            <input type="radio" name="sex"> Female
+        </div>
+
+        <label>Civil Status*</label>
+        <select required>
+            <option value="">Select Status</option>
+            <option>Single</option>
+            <option>Married</option>
+            <option>Widowed</option>
+        </select>
+
+        <label>Region*</label>
+        <input type="text" required>
+
+        <label>Province*</label>
+        <input type="text" required>
+
+        <label>City*</label>
+        <input type="text" required>
+
+        <label>Barangay*</label>
+        <input type="text" required>
+
+        <label>House No./Street*</label>
+        <input type="text" required>
+
+        <label>Contact No.*</label>
+        <input type="tel" required>
+
+        <label>Email adress</label>
+        <input type="gmail" required>
+
+        <label>Credentials Submitted*</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Form-138 (High School Card)<br>
+            <input type="checkbox"> Form-137<br>
+            <input type="checkbox"> Birth Certificate<br>
+            <input type="checkbox"> Good Moral Certificate<br>
+            <input type="checkbox"> Certificate of Transfer Credentials<br>
+            <input type="checkbox"> Transcript of Records<br>
+            <input type="checkbox"> Summer Permit / Permit to Cross Enroll<br>
+            <input type="checkbox"> Picture<br>
+            <input type="checkbox"> PSA / NSO
+        </div>
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
